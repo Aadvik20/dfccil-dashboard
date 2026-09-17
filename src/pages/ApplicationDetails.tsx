@@ -21,7 +21,6 @@ import {
     ChevronRight,
 } from "lucide-react";
 import type {
-    Application,
     RecordStatus,
 } from "@/types/application";
 import { applications } from "@/data/applications";

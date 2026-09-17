@@ -1,5 +1,4 @@
 import type {
-  Application,
   ApplicationRecord,
   RecordStatus,
 } from "@/types/application";
