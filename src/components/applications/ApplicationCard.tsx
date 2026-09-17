@@ -35,12 +35,12 @@ export default function ApplicationCard({
   const Icon =
     iconMap[application.icon as keyof typeof iconMap] ?? Package;
 
-  const statusClass =
-    application.status === "Operational"
-      ? "bg-green-100 text-green-700"
-      : application.status === "Warning"
-        ? "bg-amber-100 text-amber-700"
-        : "bg-slate-100 text-slate-700";
+  // const statusClass =
+  //   application.status === "Operational"
+  //     ? "bg-green-100 text-green-700"
+  //     : application.status === "Warning"
+  //       ? "bg-amber-100 text-amber-700"
+  //       : "bg-slate-100 text-slate-700";
 
   return (
     <div

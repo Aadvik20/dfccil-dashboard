@@ -84,7 +84,6 @@ const createRecords = (
   total: number,
   pending: number,
   approved: number,
-  rejected: number
 ): ApplicationRecord[] => {
   const records: ApplicationRecord[] = [];
 
@@ -581,8 +580,6 @@ export const applications: Application[] =
           config.stats.pending,
 
           config.stats.approved,
-
-          config.stats.rejected
         ),
       };
     }

@@ -13,7 +13,6 @@ import {
     Plane,
     Search,
     ShieldCheck,
-    Users,
     Wallet,
     Wind,
     X,
@@ -1258,7 +1257,7 @@ const ApplicationDetails = () => {
                                 {paginatedRecords.length > 0 ? (
 
                                     paginatedRecords.map(
-                                        (record, index) => (
+                                        (record) => (
 
                                             <TableRow
                                                 key={record.id}
