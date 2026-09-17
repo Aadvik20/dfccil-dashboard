@@ -44,37 +44,6 @@ const months = [
    CREATE MONTHLY TREND
 ========================================================= */
 
-const createMonthlyTrends = (
-  total: number,
-  offset = 0
-) => {
-  const percentages = [
-    0.09,
-    0.14,
-    0.11,
-    0.18,
-    0.21,
-    0.16,
-  ];
-
-  return months.map((month, index) => {
-    const percentage =
-      percentages[
-        (index + offset) %
-          percentages.length
-      ];
-
-    return {
-      month,
-
-      value: Math.max(
-        10,
-        Math.round(total * percentage)
-      ),
-    };
-  });
-};
-
 /* =========================================================
    CREATE APPLICATION RECORDS
 ========================================================= */
@@ -1206,7 +1175,7 @@ const applicationConfigs = [
    GENERATE 40 APPLICATIONS
 ========================================================= */
 
-export const applications: Application[] =
+export const applications =
   Array.from(
     {
       length: 40,

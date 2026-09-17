@@ -88,7 +88,7 @@ const ApplicationDetails = () => {
     /* -------------------------------------------------------
        Find application
     ------------------------------------------------------- */
-    const application: Application | undefined =
+    const application =
         applications.find(
             (item) =>
                 item.id === Number(id)

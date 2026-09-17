@@ -314,7 +314,7 @@ export default function Dashboard() {
                   delay={(index % 6) * 80}
                 >
                   <ApplicationCard
-                    application={application}
+                    application={application as any}
                     onClick={
                       handleApplicationClick
                     }
