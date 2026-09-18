@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import AnimatedCard from "@/components/common/AnimatedCard";
 
 import {
-  Activity,
+  // Activity,
   CheckCircle2,
   LayoutDashboard,
   Search,
@@ -42,11 +42,11 @@ export default function Dashboard() {
   const totalApps =
     applications.length;
 
-  const pendingApps =
-    applications.filter(
-      (application) =>
-        application.stats.pending > 0
-    ).length;
+  // const pendingApps =
+  //   applications.filter(
+  //     (application) =>
+  //       application.stats.pending > 0
+  //   ).length;
 
   const activeApps =
     applications.filter(
