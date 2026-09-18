@@ -9,7 +9,7 @@ export default function AppLayout() {
 
       <Header />
 
-      <div className="flex">
+      <div className="">
         <Sidebar />
         <main className="min-h-screen flex-1 md:ml-64">
           <Outlet />
