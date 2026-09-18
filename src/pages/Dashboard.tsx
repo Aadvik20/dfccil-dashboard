@@ -162,7 +162,9 @@ export default function Dashboard() {
                     setSearch(event.target.value)
                   }
                   placeholder="Search applications..."
-                  className="h-11 w-full rounded-xl border border-outline-variant bg-[#f8f9ff] pl-10 pr-10 text-sm text-on-surface outline-none transition-all placeholder:text-slate-400 focus:border-primary-container focus:bg-white focus:ring-2 focus:ring-primary-container/10" />
+                  className="searchTab h-11 w-full rounded-xl pl-4 border border-outline-variant bg-[#f8f9ff] text-sm text-on-surface outline-none transition-all placeholder:text-slate-400 focus:border-primary-container focus:bg-white focus:ring-2 focus:ring-primary-container/10"
+                  style={{paddingLeft: "35px"}}
+                  />
 
                 {search && (
                   <button type="button"
@@ -217,7 +219,7 @@ export default function Dashboard() {
 
             </button>
 
-            <button type="button" onClick={() => handleFilterClick("pending")} className={`group relative flex min-h-27.5 w-full items-center gap-4 rounded-xl border border-outline-variant p-4 text-left shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg active:scale-[0.98]
+            {/* <button type="button" onClick={() => handleFilterClick("pending")} className={`group relative flex min-h-27.5 w-full items-center gap-4 rounded-xl border border-outline-variant p-4 text-left shadow-[0_4px_20px_-2px_rgba(0,0,0,0.05)] transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg active:scale-[0.98]
 
         ${activeFilter === "pending"
                 ? "bg-orange-50 ring-2 ring-orange-200"
@@ -241,7 +243,7 @@ export default function Dashboard() {
                   Applications with pending requests
                 </div>
               </div>
-            </button>
+            </button> */}
 
             <button type="button" onClick={() =>
               handleFilterClick("active")
@@ -329,8 +331,7 @@ export default function Dashboard() {
           <div className="flex min-h-87.5 flex-col items-center justify-center rounded-2xl border border-dashed border-slate-300 bg-slate-50/50 text-center">
 
             <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-indigo-50">
-              <Search
-                className="h-7 w-7  text-indigo-500" />
+              <Search className="h-7 w-7  text-indigo-500" />
             </div>
 
             <h3 className="text-lg font-semibold text-slate-800">

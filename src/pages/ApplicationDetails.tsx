@@ -675,9 +675,9 @@ const ApplicationDetails = () => {
                                                 />
                                                 {/* Month */}
                                                 <div className={`mt-3 border-t border-[#c7c4d8] pt-2 text-center text-xs w-full ${isSelected
-                                                            ? "font-bold text-[#4f46e5]"
-                                                            : "text-muted-foreground"
-                                                        }
+                                                    ? "font-bold text-[#4f46e5]"
+                                                    : "text-muted-foreground"
+                                                    }
                                                         `}>
                                                     {item.month}
                                                 </div>

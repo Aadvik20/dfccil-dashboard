@@ -12,7 +12,6 @@ export interface ApplicationStats {
   totalUsers: number;
   totalRequests: number;
 
-  // पुराने code की compatibility के लिए
   total: number;
 
   approved: number;
@@ -37,7 +36,6 @@ export interface ApplicationRecord {
 
   submittedDate: string;
 
-  // Month filter के लिए
   month: string;
 
   status: RecordStatus;

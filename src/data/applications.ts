@@ -55,12 +55,6 @@ const createRecords = (
 ): ApplicationRecord[] => {
   const records: ApplicationRecord[] = [];
 
-  /*
-   * Demo/testing के लिए 60 records.
-   *
-   * इससे pagination आसानी से test होगी।
-   */
-
   const recordCount = 60;
 
   const pendingRatio =
@@ -1196,16 +1190,7 @@ export const applications =
 
       return {
         ...config,
-
-        /*
-         * हर application की अपनी ID
-         */
-
         id: applicationId,
-
-        /*
-         * हर application के अपने records
-         */
 
         records: createRecords(
           applicationId,
